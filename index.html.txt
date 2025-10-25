@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Curry Quadrant | Catering & Cafe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-amber-600 text-white py-6 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">The Curry Quadrant</h1>
+      <nav class="space-x-6">
+        <a href="#catering" class="hover:underline">Catering</a>
+        <a href="#cafe" class="hover:underline">Cafe</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center text-white">
+    <div class="bg-black bg-opacity-50 py-16">
+      <h2 class="text-5xl font-bold mb-4">Deliciously Crafted Moments</h2>
+      <p class="text-lg mb-6">Catering for every occasion & a cozy cafe experience under one roof.</p>
+      <a href="#contact" class="bg-amber-500 hover:bg-amber-400 text-white px-6 py-3 rounded-full font-semibold">Book Your Event</a>
+    </div>
+  </section>
+
+  <!-- Catering Section -->
+  <section id="catering" class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-4 text-amber-700">Catering Services</h2>
+    <p class="mb-8 text-lg">From corporate events to private celebrations, we bring exquisite flavors and professional service to your table. Choose from a variety of veg and non-veg menus tailored to your event size and theme.</p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="font-semibold text-xl mb-2">Corporate Events</h3>
+        <p>Delight your team or clients with customized menus and seamless service for meetings, launches, and parties.</p>
+      </div>
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="font-semibold text-xl mb-2">Weddings & Celebrations</h3>
+        <p>From traditional feasts to modern bites, we make every occasion memorable with food that speaks love.</p>
+      </div>
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="font-semibold text-xl mb-2">Custom Packages</h3>
+        <p>Flexible pricing and menu options to suit your budget and taste preferences. Book today!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cafe Section -->
+  <section id="cafe" class="bg-white py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-amber-700">Our Cafe</h2>
+      <p class="mb-8 text-lg">Relax, recharge, and relish! Our canteen-cafe blends warm ambiance with a delightful menu. Perfect for a quick bite, a friendly hangout, or a coffee break.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-amber-50 p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg mb-2">Signature Dishes</h3>
+          <p>Curry bowls, wraps, sandwiches, and fusion plates that bring together comfort and flavor.</p>
+        </div>
+        <div class="bg-amber-50 p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg mb-2">Beverages</h3>
+          <p>Freshly brewed coffee, chai, smoothies, and refreshing coolers crafted to perfection.</p>
+        </div>
+        <div class="bg-amber-50 p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg mb-2">Desserts</h3>
+          <p>From gulab jamuns to pastries — indulge your sweet tooth with our fresh, daily specials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-amber-100 py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4 text-amber-700">Contact Us</h2>
+      <p class="mb-8 text-lg">Have an event in mind or want to visit our cafe? Let’s connect!</p>
+      <form class="grid gap-4 text-left">
+        <input type="text" placeholder="Your Name" class="p-3 rounded border border-gray-300" required />
+        <input type="email" placeholder="Your Email" class="p-3 rounded border border-gray-300" required />
+        <textarea placeholder="Your Message / Booking Details" rows="4" class="p-3 rounded border border-gray-300" required></textarea>
+        <button type="submit" class="bg-amber-600 text-white py-3 rounded font-semibold hover:bg-amber-500">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-amber-700 text-white py-6 text-center">
+    <p>&copy; <span id="year"></span> The Curry Quadrant | Crafted with flavor & love.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
